@@ -1,4 +1,4 @@
-#!/usr/bin/env python [calc-kospi-rs.py]
+#!/usr/bin/env python
 
 import FinanceDataReader as fdr
 import os
