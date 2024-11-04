@@ -1,6 +1,4 @@
-#!/usr/bin/env python2
-or
-#!/usr/bin/env python3
+#!/usr/bin/env python [calc-krx-rs.py]
 
 import FinanceDataReader as fdr
 import os
