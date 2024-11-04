@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+or
+#!/usr/bin/env python3
 
 import FinanceDataReader as fdr
 import os
