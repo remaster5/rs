@@ -24,13 +24,13 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Run KOSPI script
       run: |
-        ./calc-kospi-rs.py
+        python ./calc-kospi-rs.py
     - name: Run KOSDAQ script
       run: |
-        ./calc-kosdaq-rs.py
+        python ./calc-kosdaq-rs.py
     - name: Run KRX script
       run: |
-        ./calc-krx-rs.py
+        python ./calc-krx-rs.py
     - name: Commits
       run: |
         git config --local user.email "remaster5@gmail.com"
