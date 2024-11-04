@@ -3,8 +3,7 @@ lang: ko-KR
 timezone: Asia/Seoul
 
 title: 코스피 상대 강도
-repository:remaster5/remaster5.github.io
-
+repository: remaster5/rs
 plugins:
   - jekyll-include-cache
   - jekyll-feed
