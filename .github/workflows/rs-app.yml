@@ -1,4 +1,4 @@
-name: Scrap KOSPI stock data and calculate RS rating all.
+name: Scrap KOSPI stock data and calculate RS rating all
 
 on:
   schedule:
@@ -7,7 +7,6 @@ on:
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -22,15 +21,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
+    - name: Grant execute permission for scripts
+      run: |
+        chmod +x ./calc-kospi-rs.py
+        chmod +x ./calc-kosdaq-rs.py
+        chmod +x ./calc-krx-rs.py
     - name: Run KOSPI script
-      run: |
-        python ./calc-kospi-rs.py
+      run: python ./calc-kospi-rs.py
     - name: Run KOSDAQ script
-      run: |
-        python ./calc-kosdaq-rs.py
+      run: python ./calc-kosdaq-rs.py
     - name: Run KRX script
-      run: |
-        python ./calc-krx-rs.py
+      run: python ./calc-krx-rs.py
     - name: Commits
       run: |
         git config --local user.email "remaster5@gmail.com"
