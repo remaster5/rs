@@ -24,12 +24,15 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Run KOSPI script
       run: |
+        chmod +x calc-kospi-rs.py
         ./calc-kospi-rs.py
     - name: Run KOSDAQ script
       run: |
+        chmod +x calc-kosdaq-rs.py
         ./calc-kosdaq-rs.py
     - name: Run KRX script
       run: |
+        chmod +x calc-krx-rs.py
         ./calc-krx-rs.py
     - name: Commits
       run: |
