@@ -7,7 +7,7 @@ repository: remaster5/remaster5.github.io
 plugins:
   - jekyll-include-cache
   - jekyll-feed
-
+ 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-include-cache
