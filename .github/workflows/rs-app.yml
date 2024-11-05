@@ -37,7 +37,7 @@ jobs:
     - name: Commits
       run: |
         git config --local user.email "remaster5@gmail.com"
-        git config --local user.name "remaster"
+        git config --local user.name "remaster5"
         git add .
         git commit -m "[AUTO] Daily KOSPI RS rating"
     - name: Push
