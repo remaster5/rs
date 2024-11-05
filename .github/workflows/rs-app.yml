@@ -22,6 +22,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
+    - name: Grant execute permission to KOSPI script
+      run: chmod +x ./calc-kospi-rs.py
+    - name: Grant execute permission to KOSDAQ script
+      run: chmod +x ./calc-kosdaq-rs.py
+    - name: Grant execute permission to KRX script
+      run: chmod +x ./calc-krx-rs.py
     - name: Run KOSPI script
       run: |
         ./calc-kospi-rs.py
