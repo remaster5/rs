@@ -163,7 +163,7 @@ with open(result_file_path, "w") as f:
     f.write(textwrap.dedent(header_end))
 
     comment = '''\
-    KRX 전 종목의 상대강도를 계산했다.
+    KODEX 전 종목의 상대강도를 계산했다.
 
     윌리엄 오닐 상대 강도
 
